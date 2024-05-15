@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  font-family: "Cormorant", serif;
+  width: 100%;
+}
+.cursor {
+  background-color: #111;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+.statisies::after{
+  content: '';
+  position: absolute;
+  background-color: black;
+  opacity: .7;
+  width: 2px;
+  height: 70%;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet{
+  width: 15px !important;
+  height: 15px !important;
+}
+.swiper-pagination-bullet-active{
+  color: #FFFF00 !important;
+  background-color: #FFFF00 !important;
+}
+.swiper-pagination{
+  text-align: left !important;
+  padding-left: 24px;
+}
